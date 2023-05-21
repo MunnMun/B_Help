@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "317961817668",
+    "project_id": "bhelp-92c9e",
+    "storage_bucket": "bhelp-92c9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317961817668:android:32c1335ec7f4245029f611",
+        "android_client_info": {
+          "package_name": "com.example.b_help"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317961817668-3tb9imbfh2tg4034v87c23ar84rmp64k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqQM7yJdiURJqEuH__GC5noaI5rn80WPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317961817668-3tb9imbfh2tg4034v87c23ar84rmp64k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
