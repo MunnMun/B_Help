@@ -34,27 +34,26 @@ class _PhoneAuthState extends State<PhoneAuth> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[300],
         body: Container(
           alignment: Alignment.center,
           child: SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                padding: const EdgeInsets.symmetric(horizontal: 30.0,vertical: 30.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('assets/phone-call.png',height: 120.0),
+                    Image.asset('assets/phone-call.png',height: 140.0),
                     SizedBox(height: 30.0),
                     Text('Phone Verification',style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 28.0,
                     ),),
-                    SizedBox(height: 4.0),
+                    SizedBox(height: 8.0),
                     Text('Please enter your phone number',style: TextStyle(
                       fontSize: 16.0,
                       color: Colors.grey[500],
                     ),),
-                    SizedBox(height: 10.0),
+                    SizedBox(height: 30.0),
                     Container(
                       height: 55.0,
                       decoration: BoxDecoration(
@@ -77,13 +76,12 @@ class _PhoneAuthState extends State<PhoneAuth> {
                               fontWeight: FontWeight.bold,
                               color: Colors.grey
                             ),),
-                            SizedBox(width: 10.0),
+                            SizedBox(width: 20.0),
                             Expanded(
                                 child: TextField(
                                   controller: phoneController,
                                   maxLength: 10,
                                   style: TextStyle(
-                                    letterSpacing: 5.0,
                                     fontSize: 24.0,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -98,7 +96,7 @@ class _PhoneAuthState extends State<PhoneAuth> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 10.0),
+                    SizedBox(height: 30.0),
                     GestureDetector(
                       onTap: (){
                         sendOTP();
@@ -109,9 +107,10 @@ class _PhoneAuthState extends State<PhoneAuth> {
                         decoration: BoxDecoration(
                           color: Colors.grey[900],
                           borderRadius: BorderRadius.circular(12.0),
+                          border: Border.all(color: Colors.grey,width: 2)
                         ),
                         child: Center(
-                          child: Text('Send OTP',style: TextStyle(
+                          child: Text('Send  OTP',style: TextStyle(
                             color: Colors.white,
                             fontSize: 24.0,
                             fontWeight: FontWeight.bold,

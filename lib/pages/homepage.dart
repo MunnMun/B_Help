@@ -16,57 +16,61 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
-      body: Container(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>NeedInterface()));
-                },
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 80.0,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(12.0),
-                    border: Border.all(color: Colors.white,width: 1),
-                  ),
-                  child: Center(
-                      child: Text('Need Blood',style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24.0,
-                      ),)
-                  ),
-                ),
-              ),
-              SizedBox(height: 20.0),
-              GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>DonateInterface()));
-                },
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 80.0,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(12.0),
-                    border: Border.all(color: Colors.white,width: 1),
-                  ),
-                  child: Center(
-                      child: Text('Donate Blood',style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24.0,
-                      ),)
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 30.0,vertical: 30.0),
+        child: Container(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset('assets/blood-donation.png',height: 260.0,),
+                SizedBox(height: 30.0),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>NeedInterface()));
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 80.0,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(12.0),
+                      border: Border.all(color: Colors.grey,width: 2),
+                    ),
+                    child: Center(
+                        child: Text('Need Blood',style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24.0,
+                        ),)
+                    ),
                   ),
                 ),
-              ),
-            ],
+                SizedBox(height: 20.0),
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>DonateInterface()));
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 80.0,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(12.0),
+                      border: Border.all(color: Colors.grey,width: 2),
+                    ),
+                    child: Center(
+                        child: Text('Donate Blood',style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24.0,
+                        ),)
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
